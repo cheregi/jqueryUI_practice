@@ -1,0 +1,163 @@
+body{
+    background-image: url("../img/david-marcu-114194-unsplash.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    font-family: Verdana, sans-serif;	
+
+    color: white;
+}
+a {
+    text-decoration: none;
+}
+.test1 {
+    border: 1px solid #82589F;
+    background-color: darkgrey;
+    padding: 10px;
+    border-radius: 50px;
+    width: 100px;
+    height: 50px;
+    margin: 25px auto 25px auto;
+    text-align: center;
+    }
+.test2 {
+    border: 1px solid #BDC581;
+    background-color: darkgrey;
+    padding: 10px;
+    border-radius: 50px;
+    width: 100px;
+    height: 50px;
+    margin: 25px auto 25px auto;
+    text-align: center;
+    }
+.spacer {
+    width: 600px;
+    height: 100px;
+    
+}
+    
+/************************************************** carousel ************************/
+#img1, #img2, #img3{
+   
+}
+.carousel-wrapper {
+    margin: 20px auto;
+    position: relative;
+    border: 10px solid #BDC581;
+    width: 600px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 2px #999;
+    -moz-box-shadow: 0 0 2px #999;
+    box-shadow: 0 0 2px #999;
+    }
+
+.carousel-wrapper .photo-credits {
+position: absolute;
+right: 15px;
+bottom: 0;
+font-size: 13px;
+color: #fff;
+text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+opacity: .66;
+}
+.carousel-wrapper .photo-credits a {
+  
+color: #fff;
+}
+/** <a href="https://www.jqueryscript.net/tags.php?/Carousel/">Carousel</a> **/
+.carousel {
+position: relative;
+overflow: hidden;
+width: 600px;
+height: 400px;
+}
+.carousel ul {
+    /***************************************************** modification -5000em; ******************************/
+width: 5000em;
+position: absolute;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+.carousel li {
+float: left;
+}
+/** Carousel Controls **/
+.carousel-control-prev, .carousel-control-next {
+position: absolute;
+top: 200px;
+width: 30px;
+height: 30px;
+text-align: center;
+background: #4E443C;
+color: #fff;
+text-decoration: none;
+text-shadow: 0 0 1px #000;
+font: 24px/27px Arial, sans-serif;
+-webkit-border-radius: 30px;
+-moz-border-radius: 30px;
+border-radius: 30px;
+-webkit-box-shadow: 0 0 2px #999;
+-moz-box-shadow: 0 0 2px #999;
+box-shadow: 0 0 2px #999;
+}
+.carousel-control-prev {
+left: -50px;
+}
+.carousel-control-next {
+right: -50px;
+}
+.carousel-control-prev:hover span, .carousel-control-next:hover span {
+display: block;
+}
+
+/********************************************************* dragable *****************************/
+#draggable {
+width: 75px; 
+height: 75px;
+padding: 0.5em; 
+color: white;
+font-family: "Comic Sans MS", cursive, sans-serif;
+background-color: #BDC581;
+border: 2px solid #82589F;
+font-size: 1rem;
+}
+#droppable { 
+    width: 150px; 
+    height: 150px;
+    padding: 0.5em; 
+    float: left; 
+    margin: 10px; 
+    color: #82589F;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+   
+    border: 2px solid #BDC581;
+    font-size: 2rem;
+}
+/********************************************************* Color Animation *****************************/
+.toggler {
+     width: 500px;
+      height: 200px; 
+      position: relative; 
+    }
+#button { 
+    padding: .5em 1em; 
+    text-decoration: none; 
+}
+#effect {
+     width: 240px; 
+     height: 170px; 
+     padding: 0.4em; 
+     position: relative; 
+     background: #fff; 
+    }
+#effect h3 {
+     margin: 0;
+      padding: 0.4em; 
+      text-align: center; 
+    }
+.colorAnimation {
+   float:right;
+}

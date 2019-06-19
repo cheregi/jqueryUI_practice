@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project-Diana</title>
+    <link rel="stylesheet" href="lib/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="lib/jquery-ui-1.12.1.custom/jquery-ui.theme.css">
+
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="scrollContent">
+        <section id="titleChart">
+            <div id="description">
+                <h1 class="title">Simple Title</h1>
+                <h2><a href="https://www.independent.co.uk/voices/commentators/we-must-respect-nature-if-we-are-to-survive-5371174.html">Click
+                        here to find more</a></h2>
+                <h2>Tow basic info</h2>
+                <ol>
+                    <li>
+                        First list item
+                    </li>
+                    <li>
+                        Second list item
+                    </li>
+                </ol>
+                <div class="carousel-wrapper">
+                    <div data-jcarousel="true" data-wrap="circular" class="carousel">
+                        <ul id="selectList">
+                            <li><img src="img/mathew-krizmanich-1327636-unsplash.jpg" width="600" height="400" alt=""
+                                    id="img1"></li>
+                            <li><img src="img/simon-matzinger-711259-unsplash.jpg" width="600" height="400" alt="" id="img2"></li>
+                            <li><img src="img/david-clode-791991-unsplash.jpg" width="600" height="400" alt="" id="img3"></li>
+                            <li><img src="img/bas-van-brandwijk-588535-unsplash.jpg" width="600" height="400" alt="" id="img2"></li>
+                            <li><img src="img/david-clode-363878-unsplash.jpg" width="600" height="400" alt="" id="img3"></li>
+                            <li><img src="img/erin-wilson-712754-unsplash.jpg" width="600" height="400" alt="" id="img2"></li>
+                            <li><img src="img/hakon-helberg-99985-unsplash.jpg" width="600" height="400" alt="" id="img3"></li>
+                            <li><img src="img/radoslaw-prekurat-148700-unsplash.jpg" width="600" height="400" alt="" id="img2"></li>
+                            <li><img src="img/trevor-cole-393228-unsplash.jpg" width="600" height="400" alt="" id="img3"></li>
+                            <li><img src="img/wynand-van-poortvliet-364366-unsplash.jpg" width="600" height="400" alt=""
+                                    id="img3"></li>
+                        </ul>
+                    </div>
+                    <a data-jcarousel-control="true" data-target="-=1" href="#" class="carousel-control-prev">&lsaquo;</a>
+                    <a data-jcarousel-control="true" data-target="+=1" href="#" class="carousel-control-next">&rsaquo;</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo">
+            <div class="spacer s2"></div>
+            <div id="trigger1" class="spacer s0"></div>
+            <div id="animate1" class="box2 skin">
+                <p class="test1">Respect</p>
+            </div>
+            <div class="spacer 2">
+
+            </div>
+        </section>
+        <section class="demo">
+            <div class="spacer s1"></div>
+            <div id="trigger2" class="spacer s1"></div>
+            <div class="spacer s0">
+
+            </div>
+            <div id="animate2" class="box1 black">
+                <p class="test2">The Nature </p>
+            </div>
+            <div class="spacer s2"></div>
+            <div class="spacer s_viewport"></div>
+        </section>
+    </div>
+    <!--------------------------------------- rotate --------------------->
+    <!-- 
+    <div class="spacer s2"></div>
+    <div id="trigger3" class="spacer s0"></div>
+    <div id="target3" class="box1 blue">
+        <p>I feel dizzy.</p>
+
+    </div>
+    <div class="spacer s3"></div> -->
+    <!--------------------------------------- draggable & droppable --------------------->
+
+    <div id="draggable" class="ui-widget-content">
+        <p>Drag me around</p>
+    </div>
+    <div id="droppable" class="ui-widget-header">
+        <p>Drop here</p>
+    </div>
+    <!--------------------------------------- Color Animation --------------------->
+    <section class=colorAnimation>
+        <div class="toggler">
+            <div id="effect" class="ui-widget-content ui-corner-all">
+                <h3 class="ui-widget-header ui-corner-all">Animate</h3>
+                <p>
+                    To garden, you open your personal space to admit a few, a great many, or thousands of plants which
+                    exude charm and other rewards. Tom Clothier
+                </p>
+            </div>
+        </div>
+
+        <button id="button" class="ui-state-default ui-corner-all">Read More</button>
+
+    </section>
+
+
+
+
+
+    <script src="lib/jquery/jquery-3.3.1.min.js"></script>
+    <script src="lib/janpaepke-ScrollMagic-v2.0.6-54-g3b8397d/janpaepke-ScrollMagic-3b8397d/assets/js/lib/greensock/TweenMax.min.js"></script>
+    <script src="lib/janpaepke-ScrollMagic-v2.0.6-54-g3b8397d/janpaepke-ScrollMagic-3b8397d/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script src="lib/janpaepke-ScrollMagic-v2.0.6-54-g3b8397d/janpaepke-ScrollMagic-3b8397d/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+
+    <script src="lib/jQuery-HTML-Content-Carousel-Plugin-jcarousel/dist/jquery.jcarousel.min.js"></script>
+
+    <!-- <script src="lib/jQuery-HTML-Content-Carousel-Plugin-jcarousel/dist/jquery.jcarousel-autoscroll.min.js"></script>
+    <script src="lib/jQuery-HTML-Content-Carousel-Plugin-jcarousel/dist/jquery.jcarousel-control.min.js"></script>
+    <script src="lib/jQuery-HTML-Content-Carousel-Plugin-jcarousel/dist/jquery.jcarousel-pagination.min.js"></script>
+    <script src="lib/jQuery-HTML-Content-Carousel-Plugin-jcarousel/dist/jquery.jcarousel-scrollintoview.min.js"></script> -->
+
+    <script src="lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
